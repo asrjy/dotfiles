@@ -151,18 +151,14 @@ bar {
 
 bindsym $mod+Shift+r restart
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 
-gaps inner 7
+gaps inner 10
 gaps outer 2
 
 #bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 #bindsym XF86AudioMute exec amixer -q set Master toggle
-
-# Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec sh ~/.config/i3/bl.sh -inc 20 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec sh ~/.config/i3/bl.sh -dec 20 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec /.config/toggletouchpad.sh # toggle touchpad
