@@ -30,7 +30,7 @@ font pango:Fira Code Retina 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal.real
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -161,20 +161,20 @@ gaps outer 2
 #bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /.config/toggletouchpad.sh # toggle touchpad
+#bindsym XF86TouchpadToggle exec /.config/toggletouchpad.sh # toggle touchpad
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-#bindsym XF86MonBrightnessUp exec light -A 10;
-#bindsym XF86MonBrightnessDown exec light -U 10;
+#bindsym XF86MonBrightnessUp exec light -A 10
+#bindsym XF86MonBrightnessDown exec light -U 10
 
 # Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec "sudo light -A 5; notify-send 'brightness up'"; 
-bindsym XF86MonBrightnessDown exec "sudo light -U 5; notify-send 'brightness down'";
+bindsym XF86MonBrightnessUp exec "sudo light -A 5; notify-send 'brightness up'" 
+bindsym XF86MonBrightnessDown exec "sudo light -U 5; notify-send 'brightness down'"
 
 
 
@@ -198,4 +198,4 @@ mode "$mode_system" {
 bindsym $mod+Escape mode "$mode_system"
 
 
-exec --no-startup-id feh --bg-scale ~/Pictures/earth_minimalistic.jpg
+#exec --no-startup-id feh --bg-scale ~/Pictures/earth_minimalistic.jpg
