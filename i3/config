@@ -75,6 +75,9 @@ bindsym $mod+v split v
 # google chrome
 bindsym $mod+c exec google-chrome
 
+exec --no-startup-id flameshot
+bindsym Print exec "flameshot gui"
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -146,6 +149,7 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         status_command i3status
+#        exec --no-startup-id volumeicon
 }
 
 
@@ -153,30 +157,38 @@ bindsym $mod+Shift+r restart
 
 for_window [class="^.*"] border pixel 3
 
-gaps inner 10
-gaps outer 2
+gaps inner 12
+gaps outer 4
 
 #bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
-#bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Touchpad controls
 #bindsym XF86TouchpadToggle exec /.config/toggletouchpad.sh # toggle touchpad
 
 # Pulse Audio controls
-#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-#bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 3 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 3 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5 #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5 #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 3 toggle # mute sound
 
 # Sreen brightness controls
 #bindsym XF86MonBrightnessUp exec light -A 10
-#bindsym XF86MonBrightnessDown exec light -U 10
+#bindsym XF86MonBrightnessDown exec lighclient.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-# Screen brightness controls with notification
+client.background       #ffffffcation
 bindsym XF86MonBrightnessUp exec "sudo light -A 5; notify-send 'brightness up'" 
 bindsym XF86MonBrightnessDown exec "sudo light -U 5; notify-send 'brightness down'"
 
-
+#bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+#bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+#bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
 
 set $Locker i3lock && sleep 1
 
@@ -198,4 +210,39 @@ mode "$mode_system" {
 bindsym $mod+Escape mode "$mode_system"
 
 
-#exec --no-startup-id feh --bg-scale ~/Pictures/earth_minimalistic.jpg
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mobindsym $mod+Shift+a		exec $term -e pulsemixer     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+exec --no-startup-id sg ~/.fehbg 
+
+bindsym $mod+Shift+a execz pulsemixer
+
+bindsym $mod+Shift+w exec nmtui
