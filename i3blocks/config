@@ -1,0 +1,61 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+[window]
+command=xtitle -s | cat
+align = left
+interval=persist
+color = #FF8C00	
+
+#[iplocate]
+#interval=30
+
+[pacpackages]
+interval=once
+signal=8
+
+[weather]
+interval=18000
+signal=5
+
+#[mailbox]
+#interval=180
+#signal=12
+
+[memory]
+interval=30
+label=🧠
+
+[cpu]
+interval=15
+label=💻
+
+[script]
+label=
+command=./brightness.sh
+color=#c13156
+interval=5
+
+[volume]
+interval=once
+signal=10
+
+#[disk]
+#interval=60
+#command=disk /
+
+#[disk]
+#interval=60
+#command=disk /home 🏠
+
+[clock]
+label=📅
+interval=30
+
+[internet]
+interval=10
+
+[battery]
+command= python ./battery.py
+interval=30
