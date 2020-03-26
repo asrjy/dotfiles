@@ -4,9 +4,10 @@ markup=pango
 
 [window]
 command=xtitle -s | cat
-align = left
+#align = left
 interval=persist
 color = #FF8C00	
+#min_width = 13000
 
 #[iplocate]
 #interval=30
@@ -32,10 +33,16 @@ interval=15
 label=💻
 
 [script]
-label=
-command=./brightness.sh
-color=#c13156
+label=💡 
+command=xbacklight -get | cut -d'.' -f 1
+color=#FFFFFF
 interval=5
+
+#[script]
+#label=
+#command = backlight.sh
+#color=#c13156
+#interval=5
 
 [volume]
 interval=once
