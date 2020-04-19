@@ -45,16 +45,16 @@ interval=5
 #interval=5
 
 [volume]
-interval=once
+interval=5
 signal=10
 
-#[disk]
-#interval=60
-#command=disk /
+[disk]
+interval=60
+command=disk /
 
-#[disk]
-#interval=60
-#command=disk /home 🏠
+[disk]
+interval=60
+command=disk /home 🏠
 
 [clock]
 label=📅
@@ -66,3 +66,4 @@ interval=10
 [battery]
 command= python ./battery.py
 interval=30
+
