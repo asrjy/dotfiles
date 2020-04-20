@@ -390,7 +390,7 @@ client.unfocused          #56737a #1e1e20 #56737a #56737a #56737a
 #gaps inner 14
 #gaps outer -2
 
-gaps inner 12
+gaps inner 6
 gaps outer 4
 
 
