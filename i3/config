@@ -39,6 +39,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+d exec rofi -show drun -theme slate
 bindsym $mod+d exec rofi -show run -theme slate
 
+bindsym $mod+Escape exec rofi -show window -theme slate
+
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
