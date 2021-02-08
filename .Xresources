@@ -1,284 +1,114 @@
-Xft.dpi:       96
-Xft.antialias: true
-Xft.hinting:   true
-Xft.rgba:      rgb
-Xft.autohint:  false
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
+!!!!! .Xresources / RESLOVED !!!!!!!!!!!!!!!!!!!!!! 
 
-XTerm*background:        #222D31
-XTerm*foreground:        #d8d8d8
-XTerm*pointerColor:      #1ABB9B
-XTerm*faceName:          Fixed
-XTerm*faceSize:          11
-XTerm*reverseVideo:      on
-XTerm*selectToClipboard: true
+! MOLOKAI
+!*foreground:   #f8f8f8
+!*background:   #1b1d1e
+!*color0:       #808080
+!*color8:       #465457
+!*color1:       #d7005f
+!*color9:       #f92672
+!*color2:       #87ff00
+!*color10:      #a6e22e
+!*color3:       #ff8700
+!*color11:      #fd971f
+!*color4:       #acac85
+!*color12:      #c4be89
+!*color5:       #af5fff
+!*color13:      #ae81ff
+!*color6:       #5fd7ff
+!*color14:      #84e0f2
+!*color7:       #f8f8f8
+!*color15:      #ffffff
 
-Xcursor.theme: Adwaita
-Xcursor.size:                     0
+! DRACULA
+!*foreground:    #F8F8F2
+!*background:    #282A36
+!*color0:        #44475a
+!*color8:        #6272a4
+!*color1:        #FF5555
+!*color9:        #FF6E67
+!*color2:        #50FA7B
+!*color10:       #5AF78E
+!*color3:        #F1FA8C
+!*color11:       #F4F99D
+!*color4:        #BD93F9
+!*color12:       #CAA9FA
+!*color5:        #FF79C6
+!*color13:       #FF92D0
+!*color6:        #8BE9FD
+!*color14:       #9AEDFE
+!*color7:        #BFBFBF
+!*color15:       #F8F8F2
 
-URxvt.font:			xft:Fira Code Retina:pixelsize=14:antialias=true:hinting=true
-! alternative font settings with 'terminus':
-! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-!! terminus names see end of file!
+! DOOM-ONE
+*foreground:   #bfbfbf
+*background:   #282c34
+*color0:       #5b6268
+*color8:       #3f444a
+*color1:       #ff6c6b
+*color9:       #ff6c6b
+*color2:       #98be65
+*color10:      #98be65
+*color3:       #da8548
+*color11:      #da8548
+*color4:       #51afef
+*color12:      #51afef
+*color5:       #c678dd
+*color13:      #c678dd
+*color6:       #a9a1e1
+*color14:      #a9a1e1
+*color7:       #DFDFDF
+*color15:      #ffffff
 
-URxvt.transparent:   true
-URxvt.shading:       25
-Urxvt.blurRadius: 25
+!!!!! URXVT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
-URxvt*scrollBar:                  false
-URxvt*mouseWheelScrollPage:       false
-URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 grey
-URxvt*saveLines:                  5000
+URxvt*termName:         rxvt-unicode-256color
 
-!for 'fake' transparency (without Compton) uncomment the following three lines
-!URxvt*inheritPixmap:            true
-!URxvt*transparent:              true
-!URxvt*shading:                  200
+! SETTINGS
+URxvt*buffered:         false
+URxvt*saveLines:        0
+URxvt*scrollBar:        false
+URxvt*iso14755:         false
+URxvt*iso14755_52:      false
 
-! Normal copy-paste keybindings without perls
-URxvt.iso14755:                   false
-!URxvt.keysym.Shift-Control-V:     eval:paste_clipboard
-!URxvt.keysym.Shift-Control-C:     eval:selection_to_clipboard
-!Xterm escape codes, word by word movement
-URxvt.keysym.Control-Left:        \033[1;5D
-URxvt.keysym.Shift-Control-Left:  \033[1;6D
-URxvt.keysym.Control-Right:       \033[1;5C
-URxvt.keysym.Shift-Control-Right: \033[1;6C
-URxvt.keysym.Control-Up:          \033[1;5A
-URxvt.keysym.Shift-Control-Up:    \033[1;6A
-URxvt.keysym.Control-Down:        \033[1;5B
-URxvt.keysym.Shift-Control-Down:  \033[1;6B
-! Rxvt.perl-ext-common:             ...,clipboard
- URxvt.keysym.Shift-Control-C:               perl:clipboard:copy
- URxvt.keysym.Shift-Control-V:                 perl:clipboard:paste
-! URxvt.keysym.M-C-v:               perl:clipboard:paste_escaped
-! URxvt*termName:                   string
-! URxvt*geometry:                   geometry
-! URxvt*chdir:                      string
-! URxvt*loginShell:                 boolean
-! URxvt*multiClickTime:             number
-! URxvt*jumpScroll:                 boolean
-! URxvt*skipScroll:                 boolean
-! URxvt*pastableTabs:               boolean
-! URxvt*scrollstyle:                plain
-! URxvt*scrollBar_right:            boolean
-! URxvt*scrollBar_floating:         true
-! URxvt*scrollBar_align:            mode
-! URxvt*thickness:                  number
-! URxvt*scrollTtyOutput:            boolean
-! URxvt*scrollTtyKeypress:          boolean
-! URxvt*scrollWithBuffer:           boolean
-! URxvt*tintColor:                  !7DA55
-! URxvt*blurRadius:                 HxV
-! URxvt*fading:                     number
-! URxvt*fadeColor:                  color
-! URxvt*utmpInhibit:                boolean
-! URxvt*urgentOnBell:               boolean
-! URxvt*visualBell:                 boolean
-! URxvt*mapAlert:                   boolean
-! URxvt*meta8:                      boolean
-! URxvt*tripleclickwords:           boolean
-! URxvt*insecure:                   boolean
-! URxvt*cursorUnderline:            boolean
-! URxvt*pointerBlank:               boolean
-! URxvt*color0:                     color
-! URxvt*color1:                     color
-! URxvt*color2:                     color
-! URxvt*color3:                     color
-! URxvt*color4:                     color
-! URxvt*color5:                     color
-! URxvt*color6:                     color
-! URxvt*color7:                     color
-! URxvt*color8:                     color
-! URxvt*color9:                     color
-! URxvt*color10:                    color
-! URxvt*color11:                    color
-! URxvt*color12:                    color
-! URxvt*color13:                    color
-! URxvt*color14:                    color
-! URxvt*color15:                    color
-! URxvt*colorBD:                    color
-! URxvt*colorIT:                    color
-! URxvt*colorUL:                    color
-! URxvt*colorRV:                    color
-! URxvt*underlineColor:             color
-! URxvt*scrollColor:                color
-! URxvt*troughColor:                color
-! URxvt*highlightColor:             color
-! URxvt*highlightTextColor:         color
-! URxvt*cursorColor:                color
-! URxvt*cursorColor2:               color
-! URxvt*pointerColor:               color
-! URxvt*pointerColor2:              color
-! URxvt*borderColor:                color
-! URxvt*iconFile:                   file
-! URxvt*font:                       fontname
-! URxvt*boldFont:                   fontname
-! URxvt*italicFont:                 fontname
-! URxvt*boldItalicFont:             fontname
-! URxvt*intensityStyles:            boolean
-! URxvt*inputMethod:                name
-! URxvt*preeditType:                style
-! URxvt*imLocale:                   string
-! URxvt*imFont:                     fontname
-! URxvt*title:                      string
-! URxvt*iconName:                   string
-! URxvt*buffered:                   boolean
-! URxvt*depth:                      number
-! URxvt*visual:                     number
-! URxvt*transient-for:              windowid
-! URxvt*override-redirect:          boolean
-! URxvt*hold:                       boolean
-! URxvt*externalBorder:             number
-! URxvt*internalBorder:             number
-! URxvt*borderLess:                 true
-! URxvt*lineSpace:                  number
-! URxvt*letterSpace:                number
-! URxvt*skipBuiltinGlyphs:          boolean
-! URxvt*pointerBlankDelay:          number
-! URxvt*backspacekey:               string
-! URxvt*deletekey:                  string
-! URxvt*print-pipe:                 string
-! URxvt*modifier:                   modifier
-! URxvt*cutchars:                   string
-! URxvt*answerbackString:           string
-! URxvt*secondaryScreen:            boolean
-! URxvt*secondaryScroll:            boolean
-! URxvt*perl-lib:                   string
-! URxvt*perl-eval:                  perl-eval
-! URxvt*perl-ext-common:            string
-! URxvt*perl-ext:                   string
-! URxvt*iso14755:                   boolean
-! URxvt*iso14755_52:                boolean
-! URxvt*xrm:                        string
-! URxvt*keysym.sym:                 keysym
-! URxvt*background.border:          boolean
-! URxvt*background.expr:            string
-! URxvt*background.interval:        seconds
-! URxvt*bell-command:               string
-! URxvt*kuake.hotkey:               string
-! URxvt*matcher.button:             string
-! URxvt*matcher.launcher:           string
-! URxvt*matcher.launcher.*:         string
-! URxvt*matcher.pattern.*:          string
-! URxvt*matcher.rend.*:             string
-! URxvt*remote-clipboard.fetch:     string
-! URxvt*remote-clipboard.store:     string
-! URxvt*searchable-scrollback:      string
-! URxvt*selection-autotransform.*:  string
-! URxvt*selection-pastebin.cmd:     string
-! URxvt*selection-pastebin.url:     string
-! URxvt*selection.pattern-0:        string
-! URxvt*tab-bg:                     colour
-! URxvt*tab-fg:                     colour
-! URxvt*tabbar-bg:                  colour
-! URxvt*tabbar-fg:                  colour
-! URxvt*url-launcher:               string
+! BORDER
+URxvt*borderWidth:      0
+URxvt*internalBorder:   0
 
-! The Terminus font uses the following X-names:
-! -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
-! -xos4-terminus-medium-r-normal--14-140-72-72-c-80-iso10646-1
-! -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
-! -xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1
-! -xos4-terminus-medium-r-normal--22-220-72-72-c-110-iso10646-1
-! -xos4-terminus-medium-r-normal--24-240-72-72-c-120-iso10646-1
-! -xos4-terminus-medium-r-normal--28-280-72-72-c-140-iso10646-1
-! -xos4-terminus-medium-r-normal--32-320-72-72-c-160-iso10646-1
-! -xos4-terminus-bold-r-normal--12-120-72-72-c-60-iso10646-1
-! -xos4-terminus-bold-r-normal--14-140-72-72-c-80-iso10646-1
-! -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
-! -xos4-terminus-bold-r-normal--20-200-72-72-c-100-iso10646-1
-! -xos4-terminus-bold-r-normal--24-240-72-72-c-120-iso10646-1
-! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
-! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
+! FONT
+URxvt*font:             xft:Overpass Mono:size=10
+rofi.font:             xft:Overpass Mono:size=10
+! LINKS
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:     /usr/bin/xdg-open
+URxvt.matcher.button:   1
 
+URxvt.internalBorder:   0
 
-!URxvt.perl-ext-common:  ...,resize-font,...
+!!!!! XST !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+st.termname:            st-256color
+st.shell:               /bin/zsh
+st.font:                CozetteVector:size=9
+st.borderpx:            16
 
-!! Copy Paste & Other Extensions
-URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
-URxvt.copyCommand: xclip -i -selection clipboard
-URxvt.pasteCommand: xclip -o -selection clipboard
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.urlLauncher: firefox
-URxvt.underlineURLs: true
-URxvt.urlButton: 1
+!!!!! XTERM !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-!! Common Keybinds for Navigations
-URxvt.keysym.Shift-Up: command:\033]720;1\007
-URxvt.keysym.Shift-Down: command:\033]721;1\007
-!URxvt.keysym.Control-Up: \033[1;5A
-!URxvt.keysym.Control-Down: \033[1;5B
-!URxvt.keysym.Control-Right: \033[1;5C
-!URxvt.keysym.Control-Left: \033[1;5D
+xterm.BorderWidth: 0
 
+!!!!! HERBE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
- 
-#define S_base03        #002b36
-#define S_base02        #073642
-#define S_base01        #586e75
-#define S_base00        #657b83
-#define S_base0         #839496
-#define S_base1         #93a1a1
-#define S_base2         #eee8d5
-#define S_base3         #fdf6e3
+herbe.background_color: #44475a
+herbe.border_color: #44475a
+herbe.font_color: #DFDFDF
+herbe.font_pattern: CozetteVector:size=9
+herbe.line_spacing: 6
+herbe.padding: 16
+herbe.width: 300
+herbe.border_size: 0
+herbe.pos_x: 810
+herbe.pos_y: 16
+! 0 = TOP_LEFT, 1 = TOP_RIGHT, 2 = BOTTOM_LEFT, 3 = BOTTOM_RIGHT
+herbe.corner: 3
+herbe.duration: 5
 
-*background:            S_base03
-*foreground:            S_base0
-*fadeColor:             S_base03
-*cursorColor:           S_base1
-*pointerColorBackground:S_base01
-*pointerColorForeground:S_base1
-
-#define S_yellow        #b58900
-#define S_orange        #cb4b16
-#define S_red           #dc322f
-#define S_magenta       #d33682
-#define S_violet        #6c71c4
-#define S_blue          #268bd2
-#define S_cyan          #2aa198
-#define S_green         #859900
-
-!! black dark/light
-*color0:                S_base02
-*color8:                S_base03
-
-!! red dark/light
-*color1:                S_red
-*color9:                S_orange
-
-!! green dark/light
-*color2:                S_green
-*color10:               S_base01
-
-!! yellow dark/light
-*color3:                S_yellow
-*color11:               S_base00
-
-!! blue dark/light
-*color4:                S_blue
-*color12:               S_base0
-
-!! magenta dark/light
-*color5:                S_magenta
-*color13:               S_violet
-
-!! cyan dark/light
-*color6:                S_cyan
-*color14:               S_base1
-
-!! white dark/light
-*color7:                S_base2
-*color15:               S_base3
