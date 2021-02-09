@@ -30,13 +30,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -177,9 +170,22 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#         status_command i3status
-# }
+ bar {
+         position top
+         status_command i3blocks
+         font pango:Fantasque Sans Mono 12
+         colors {
+   	 background #282A36
+  	  statusline #F8F8F2
+   	 separator  #44475A
+
+ 	   focused_workspace  #44475A #44475A #F8F8F2
+ 	   active_workspace   #282A36 #44475A #F8F8F2
+  	  inactive_workspace #282A36 #282A36 #BFBFBF
+  	  urgent_workspace   #FF5555 #FF5555 #F8F8F2
+  	  binding_mode       #FF5555 #FF5555 #F8F8F2
+  	}
+ }
 
 
 #############################
@@ -199,11 +205,22 @@ font pango:Fantasque Sans Mono 12
 bindsym $mod+Return exec kitty
 
 # Rofi
-bindsym $mod+d exec launcher_text
+# bindsym $mod+d exec launcher_text
+
+#bindsym $mod+d exec dmenu
+
+#bindsym $mod+d exec --no-startup-id dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#f4800d' -nf '#F4800d' -l 6 -fn 'Fantasque Sans Mono:bold:pixelsize=15'
+
+bindsym $mod+d exec --no-startup-id dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'Run' -l 5
+
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'GUI Apps' -l 5 "
 
 # DEFAULT BORDER
-for_window [class="^.*"] border pixel 4
-for_window [title="^.*"] border pixel 1
+smart_borders on
+for_window [title="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 5
+border_radius 3
+hide_edge_borders both
 
 # FLOATING APPLICATIONS
 for_window [class="Orca"] floating enable
@@ -222,23 +239,54 @@ bindsym $mod+Ctrl+l move right
 bindsym $mod+f fullscreen toggle
 
 # Hides the title bar
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 3
 
 exec --no-startup-id nitrogen --restore
 
-exec bash ~/.config/polybar/launch.sh --hack
+# exec bash ~/.config/polybar/launch.sh --material
+
+exec picom &
+
+exec bash ~/Documents/stack-monitors.sh
 
 # XRESOURCES
 #set_from_resource $fg foreground
-set $fg "#888888"
-set $bg "#888888"
+set $fg "#353836"
+set $bg "#181a19"
 
-# CLASS                 BORDER  BACK    TEXT    INDICATOR
-client.focused          $bg     $bg     $fg     $bg
-client.focused_inactive $bg     $bg     $fg     $bg 
-client.unfocused        $bg     $bg     $fg     $bg
-client.urgent           $bg     $bg     $fg     $bg 
-client.placeholder      $bg     $bg     $fg     $bg 
+
+# Orange Green Theme
+# set $bg-color 	         #2F343F
+# set $inactive-bg-color   #7A7A7A
+# set $text-color          #f3f4f5
+# set $inactive-text-color #676E7D
+# set $urgent-bg-color     #E53935
+
+#                       border              background         text                 indicator
+# client.focused          #cd7056           #cd7056          $text-color          #cd7056 
+# client.unfocused        #91B490           #91B490          #81a586              #91B490 
+# client.focused_inactive #91B490           #91B490          #81a586              #91B490
+# client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #81a856
+
+# Dracula Color Theme
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
+# Screen brightness controls with notification
+# bindsym XF86MonBrightnessUp exec "light -A 5; notify-send 'Brightness Increased'"; # increase screen brightness with notification
+# bindsym XF86MonBrightnessDown exec "light -U 5; notify-send 'Brightness Decreased'"; # decrease screen brightness with notification
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5% ; $refresh_i3status ; notify-send 'Volume Increased'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5% ; $refresh_i3status ; notify-send 'Volume Decreased'"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle ; $refresh_i3status ; notify-send 'Toggled Audio Mute'"
+bindsym XF86AudioMicMute exec --no-startup-id pactl "set-source-mute @DEFAULT_SOURCE@ toggle ; $refresh_i3status ; notify-send 'Toggled Mic Mute'"
 
 
 #############################
