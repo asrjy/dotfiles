@@ -3,7 +3,7 @@ set $mod Mod4
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -164,7 +164,7 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#
 # smart_borders on
 # for_window [title="^.*"] border pixel 5
 # for_window [class="^.*"] border pixel 5
-border_radius 3
+# border_radius 3
 # hide_edge_borders both
 
 # FLOATING APPLICATIONS
@@ -192,7 +192,8 @@ exec --no-startup-id nitrogen --restore
 
 # exec bash ~/.config/polybar/launch.sh --material
 
-exec picom &
+# Picom
+#exec picom &
 
 exec bash ~/Documents/stack-monitors.sh
 
@@ -203,7 +204,7 @@ set $bg "#181a19"
 
 
 # Dracula Color Theme
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused          #384261 #384261 #F8F8F2 #384261   #384261
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
@@ -264,6 +265,13 @@ bar {
                 binding_mode       #FF5555 #FF5555 #F8F8F2
         }
 }
+
+bindsym $mod+t exec thunar
+# bindsym $mod+Shift+e exec admin://thunar
+
+# Compton autostart
+exec --no-startup-id "compton -b"
+
 
 #############################
 ### settings for i3-gaps: ###
