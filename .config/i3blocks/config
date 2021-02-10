@@ -1,0 +1,47 @@
+[script]
+label=💡 
+command=light | cut -d'.' -f 1
+color=#FFFFFF
+interval=5
+
+[DISK]
+command=df -h / | awk '/\//{ printf(" 💾 %4s/%s \n", $4, $2) }'
+interval=2
+color=#C9E3DB
+
+[cpu]
+command=~/.local/bin/statusbar/cpu.sh
+interval=15
+interval=repeat
+color=#00B4EB
+label=🧠
+
+[MEM]
+command=~/.local/bin/statusbar/memory.sh
+interval=1
+color=#FEC925
+label=💪
+
+[SOUND_BURST]
+command=~/.config/i3blocks/sound/sound_burst.sh
+interval=once
+
+#[SOUND]
+#full_text= 🔇:  0% 
+#command=~/.config/i3blocks/sound/sound_info.sh
+#interval=0
+#signal=1
+
+[volume]
+command=~/.local/bin/statusbar/volume.sh
+interval=once
+signal=10
+
+[BATTERY]
+command=~/.config/i3blocks/battery/battery_info.sh
+interval=3
+
+[clock]
+command=~/.local/bin/statusbar/clock.sh
+label=📅
+interval=1

@@ -1,0 +1,16 @@
+{
+    "id": "38c5d23af00980e0ab82b66b32c2ce62",
+    "metadata": {
+        "fullname": "xrandr-BenQ DL2020-9AE04352SL0",
+        "name": "HDMI-1-0"
+    },
+    "mode": {
+        "refresh": 59.7895393371582,
+        "size": {
+            "height": 768,
+            "width": 1366
+        }
+    },
+    "rotation": 1,
+    "scale": 1
+}

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weatherdata>
+  <apiChanges>
+    <!--NB!!! Since we have no other options to contact our users of forecast.xml, we have decided to use this method to get your attention to some major changes with our API-->
+    <!--This summer, forecast.xml and forecast_hour_by_hour.xml will be discontinued in favour of a newer JSON API. An exactly date is not set yet.-->
+    <!--Vi encourage you already now to switch to the new API.-->
+    <!--There are a lot of changes, and you can read all the technical details in our new developer portal https://developer.yr.no-->
+  </apiChanges>
+  <location>
+    <name>Linköping</name>
+    <type>Regional capital</type>
+    <country>Sweden</country>
+    <timezone id="Europe/Stockholm" utcoffsetMinutes="60" />
+    <location altitude="58" latitude="58.41086" longitude="15.62157" geobase="geonames" geobaseid="2694762" />
+  </location>
+  <credit>
+    <!--In order to use the free weather data from yr no, you HAVE to display 
+the following text clearly visible on your web page. The text should be a 
+link to the specified URL.-->
+    <!--Please read more about our conditions and guidelines at http://om.yr.no/verdata/  English explanation at http://om.yr.no/verdata/free-weather-data/-->
+    <link text="Weather forecast from Yr, delivered by the Norwegian Meteorological Institute and the NRK" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/" />
+  </credit>
+  <links>
+    <link id="xmlSource" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/forecast.xml" />
+    <link id="xmlSourceHourByHour" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/forecast_hour_by_hour.xml" />
+    <link id="overview" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/" />
+    <link id="hourByHour" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/hour_by_hour" />
+    <link id="longTermForecast" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/long" />
+  </links>
+  <meta>
+    <lastupdate>2021-02-08T17:53:00</lastupdate>
+    <nextupdate>2021-02-08T19:03:00</nextupdate>
+  </meta>
+  <sun rise="2021-02-08T07:47:03" set="2021-02-08T16:37:21" />
+  <forecast>
+    <tabular>
+      <time from="2021-02-08T19:00:00" to="2021-02-09T00:00:00" period="3">
+        <!-- Valid from 2021-02-08T19:00:00 to 2021-02-09T00:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-08T19:00:00 -->
+        <windDirection deg="41.1" code="NE" name="Northeast" />
+        <windSpeed mps="4.3" name="Gentle breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1020.0" />
+      </time>
+      <time from="2021-02-09T00:00:00" to="2021-02-09T06:00:00" period="0">
+        <!-- Valid from 2021-02-09T00:00:00 to 2021-02-09T06:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" minvalue="0" maxvalue="0.9" />
+        <!-- Valid at 2021-02-09T00:00:00 -->
+        <windDirection deg="45.7" code="NE" name="Northeast" />
+        <windSpeed mps="6.1" name="Moderate breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1018.9" />
+      </time>
+      <time from="2021-02-09T06:00:00" to="2021-02-09T12:00:00" period="1">
+        <!-- Valid from 2021-02-09T06:00:00 to 2021-02-09T12:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.7" />
+        <!-- Valid at 2021-02-09T06:00:00 -->
+        <windDirection deg="42.9" code="NE" name="Northeast" />
+        <windSpeed mps="5.7" name="Moderate breeze" />
+        <temperature unit="celsius" value="-8" />
+        <pressure unit="hPa" value="1017.3" />
+      </time>
+      <time from="2021-02-09T12:00:00" to="2021-02-09T18:00:00" period="2">
+        <!-- Valid from 2021-02-09T12:00:00 to 2021-02-09T18:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-09T12:00:00 -->
+        <windDirection deg="48.6" code="NE" name="Northeast" />
+        <windSpeed mps="6.0" name="Moderate breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1017.6" />
+      </time>
+      <time from="2021-02-09T18:00:00" to="2021-02-10T00:00:00" period="3">
+        <!-- Valid from 2021-02-09T18:00:00 to 2021-02-10T00:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-09T18:00:00 -->
+        <windDirection deg="43.7" code="NE" name="Northeast" />
+        <windSpeed mps="5.7" name="Moderate breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1017.3" />
+      </time>
+      <time from="2021-02-10T00:00:00" to="2021-02-10T06:00:00" period="0">
+        <!-- Valid from 2021-02-10T00:00:00 to 2021-02-10T06:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-10T00:00:00 -->
+        <windDirection deg="34.9" code="NE" name="Northeast" />
+        <windSpeed mps="4.1" name="Gentle breeze" />
+        <temperature unit="celsius" value="-8" />
+        <pressure unit="hPa" value="1017.4" />
+      </time>
+      <time from="2021-02-10T06:00:00" to="2021-02-10T12:00:00" period="1">
+        <!-- Valid from 2021-02-10T06:00:00 to 2021-02-10T12:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-10T06:00:00 -->
+        <windDirection deg="30.3" code="NNE" name="North-northeast" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="-9" />
+        <pressure unit="hPa" value="1017.0" />
+      </time>
+      <time from="2021-02-10T12:00:00" to="2021-02-10T18:00:00" period="2">
+        <!-- Valid from 2021-02-10T12:00:00 to 2021-02-10T18:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-10T12:00:00 -->
+        <windDirection deg="27.6" code="NNE" name="North-northeast" />
+        <windSpeed mps="4.0" name="Gentle breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1018.2" />
+      </time>
+      <time from="2021-02-10T18:00:00" to="2021-02-11T00:00:00" period="3">
+        <!-- Valid from 2021-02-10T18:00:00 to 2021-02-11T00:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-10T18:00:00 -->
+        <windDirection deg="8.5" code="N" name="North" />
+        <windSpeed mps="2.6" name="Light breeze" />
+        <temperature unit="celsius" value="-8" />
+        <pressure unit="hPa" value="1020.1" />
+      </time>
+      <time from="2021-02-11T01:00:00" to="2021-02-11T07:00:00" period="0">
+        <!-- Valid from 2021-02-11T01:00:00 to 2021-02-11T07:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-11T01:00:00 -->
+        <windDirection deg="7.8" code="N" name="North" />
+        <windSpeed mps="4.8" name="Gentle breeze" />
+        <temperature unit="celsius" value="-9" />
+        <pressure unit="hPa" value="1024.3" />
+      </time>
+      <time from="2021-02-11T07:00:00" to="2021-02-11T13:00:00" period="1">
+        <!-- Valid from 2021-02-11T07:00:00 to 2021-02-11T13:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-11T07:00:00 -->
+        <windDirection deg="8.6" code="N" name="North" />
+        <windSpeed mps="2.9" name="Light breeze" />
+        <temperature unit="celsius" value="-12" />
+        <pressure unit="hPa" value="1029.4" />
+      </time>
+      <time from="2021-02-11T13:00:00" to="2021-02-11T19:00:00" period="2">
+        <!-- Valid from 2021-02-11T13:00:00 to 2021-02-11T19:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-11T13:00:00 -->
+        <windDirection deg="18.9" code="NNE" name="North-northeast" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1031.8" />
+      </time>
+      <time from="2021-02-11T19:00:00" to="2021-02-12T01:00:00" period="3">
+        <!-- Valid from 2021-02-11T19:00:00 to 2021-02-12T01:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-11T19:00:00 -->
+        <windDirection deg="316.5" code="NW" name="Northwest" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="-10" />
+        <pressure unit="hPa" value="1033.8" />
+      </time>
+      <time from="2021-02-12T01:00:00" to="2021-02-12T07:00:00" period="0">
+        <!-- Valid from 2021-02-12T01:00:00 to 2021-02-12T07:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-12T01:00:00 -->
+        <windDirection deg="314.9" code="NW" name="Northwest" />
+        <windSpeed mps="2.0" name="Light breeze" />
+        <temperature unit="celsius" value="-13" />
+        <pressure unit="hPa" value="1035.8" />
+      </time>
+      <time from="2021-02-12T07:00:00" to="2021-02-12T13:00:00" period="1">
+        <!-- Valid from 2021-02-12T07:00:00 to 2021-02-12T13:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-12T07:00:00 -->
+        <windDirection deg="290.8" code="WNW" name="West-northwest" />
+        <windSpeed mps="2.3" name="Light breeze" />
+        <temperature unit="celsius" value="-15" />
+        <pressure unit="hPa" value="1036.4" />
+      </time>
+      <time from="2021-02-12T13:00:00" to="2021-02-12T19:00:00" period="2">
+        <!-- Valid from 2021-02-12T13:00:00 to 2021-02-12T19:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-12T13:00:00 -->
+        <windDirection deg="271.4" code="W" name="West" />
+        <windSpeed mps="2.6" name="Light breeze" />
+        <temperature unit="celsius" value="-8" />
+        <pressure unit="hPa" value="1037.1" />
+      </time>
+      <time from="2021-02-12T19:00:00" to="2021-02-13T01:00:00" period="3">
+        <!-- Valid from 2021-02-12T19:00:00 to 2021-02-13T01:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-12T19:00:00 -->
+        <windDirection deg="345.3" code="NNW" name="North-northwest" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="-9" />
+        <pressure unit="hPa" value="1037.6" />
+      </time>
+      <time from="2021-02-13T01:00:00" to="2021-02-13T07:00:00" period="0">
+        <!-- Valid from 2021-02-13T01:00:00 to 2021-02-13T07:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-13T01:00:00 -->
+        <windDirection deg="334.5" code="NNW" name="North-northwest" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="-10" />
+        <pressure unit="hPa" value="1038.3" />
+      </time>
+      <time from="2021-02-13T07:00:00" to="2021-02-13T13:00:00" period="1">
+        <!-- Valid from 2021-02-13T07:00:00 to 2021-02-13T13:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-13T07:00:00 -->
+        <windDirection deg="319.3" code="NW" name="Northwest" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="-10" />
+        <pressure unit="hPa" value="1037.9" />
+      </time>
+      <time from="2021-02-13T13:00:00" to="2021-02-13T19:00:00" period="2">
+        <!-- Valid from 2021-02-13T13:00:00 to 2021-02-13T19:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-13T13:00:00 -->
+        <windDirection deg="312.2" code="NW" name="Northwest" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="-4" />
+        <pressure unit="hPa" value="1038.2" />
+      </time>
+      <time from="2021-02-13T19:00:00" to="2021-02-14T01:00:00" period="3">
+        <!-- Valid from 2021-02-13T19:00:00 to 2021-02-14T01:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-13T19:00:00 -->
+        <windDirection deg="0.4" code="N" name="North" />
+        <windSpeed mps="3.0" name="Light breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1038.1" />
+      </time>
+      <time from="2021-02-14T01:00:00" to="2021-02-14T07:00:00" period="0">
+        <!-- Valid from 2021-02-14T01:00:00 to 2021-02-14T07:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-14T01:00:00 -->
+        <windDirection deg="328.2" code="NNW" name="North-northwest" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="-8" />
+        <pressure unit="hPa" value="1037.5" />
+      </time>
+      <time from="2021-02-14T07:00:00" to="2021-02-14T13:00:00" period="1">
+        <!-- Valid from 2021-02-14T07:00:00 to 2021-02-14T13:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-14T07:00:00 -->
+        <windDirection deg="278.4" code="W" name="West" />
+        <windSpeed mps="2.7" name="Light breeze" />
+        <temperature unit="celsius" value="-10" />
+        <pressure unit="hPa" value="1037.7" />
+      </time>
+      <time from="2021-02-14T13:00:00" to="2021-02-14T19:00:00" period="2">
+        <!-- Valid from 2021-02-14T13:00:00 to 2021-02-14T19:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-14T13:00:00 -->
+        <windDirection deg="279.2" code="W" name="West" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="-3" />
+        <pressure unit="hPa" value="1034.9" />
+      </time>
+      <time from="2021-02-14T19:00:00" to="2021-02-15T01:00:00" period="3">
+        <!-- Valid from 2021-02-14T19:00:00 to 2021-02-15T01:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-14T19:00:00 -->
+        <windDirection deg="222.8" code="SW" name="Southwest" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="-5" />
+        <pressure unit="hPa" value="1032.5" />
+      </time>
+      <time from="2021-02-15T01:00:00" to="2021-02-15T07:00:00" period="0">
+        <!-- Valid from 2021-02-15T01:00:00 to 2021-02-15T07:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-15T01:00:00 -->
+        <windDirection deg="346.9" code="NNW" name="North-northwest" />
+        <windSpeed mps="2.1" name="Light breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1033.6" />
+      </time>
+      <time from="2021-02-15T07:00:00" to="2021-02-15T13:00:00" period="1">
+        <!-- Valid from 2021-02-15T07:00:00 to 2021-02-15T13:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-15T07:00:00 -->
+        <windDirection deg="331.5" code="NNW" name="North-northwest" />
+        <windSpeed mps="2.6" name="Light breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1033.1" />
+      </time>
+      <time from="2021-02-15T13:00:00" to="2021-02-15T19:00:00" period="2">
+        <!-- Valid from 2021-02-15T13:00:00 to 2021-02-15T19:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-15T13:00:00 -->
+        <windDirection deg="318.8" code="NW" name="Northwest" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="-4" />
+        <pressure unit="hPa" value="1034.9" />
+      </time>
+      <time from="2021-02-15T19:00:00" to="2021-02-16T01:00:00" period="3">
+        <!-- Valid from 2021-02-15T19:00:00 to 2021-02-16T01:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-15T19:00:00 -->
+        <windDirection deg="153.0" code="SSE" name="South-southeast" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1031.9" />
+      </time>
+      <time from="2021-02-16T01:00:00" to="2021-02-16T07:00:00" period="0">
+        <!-- Valid from 2021-02-16T01:00:00 to 2021-02-16T07:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-16T01:00:00 -->
+        <windDirection deg="0.1" code="N" name="North" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1029.8" />
+      </time>
+      <time from="2021-02-16T07:00:00" to="2021-02-16T13:00:00" period="1">
+        <!-- Valid from 2021-02-16T07:00:00 to 2021-02-16T13:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-16T07:00:00 -->
+        <windDirection deg="349.1" code="N" name="North" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="-7" />
+        <pressure unit="hPa" value="1030.2" />
+      </time>
+      <time from="2021-02-16T13:00:00" to="2021-02-16T19:00:00" period="2">
+        <!-- Valid from 2021-02-16T13:00:00 to 2021-02-16T19:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-16T13:00:00 -->
+        <windDirection deg="296.0" code="WNW" name="West-northwest" />
+        <windSpeed mps="3.2" name="Light breeze" />
+        <temperature unit="celsius" value="-4" />
+        <pressure unit="hPa" value="1029.4" />
+      </time>
+      <time from="2021-02-16T19:00:00" to="2021-02-17T01:00:00" period="3">
+        <!-- Valid from 2021-02-16T19:00:00 to 2021-02-17T01:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-16T19:00:00 -->
+        <windDirection deg="5.3" code="N" name="North" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="-5" />
+        <pressure unit="hPa" value="1029.1" />
+      </time>
+      <time from="2021-02-17T01:00:00" to="2021-02-17T07:00:00" period="0">
+        <!-- Valid from 2021-02-17T01:00:00 to 2021-02-17T07:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-17T01:00:00 -->
+        <windDirection deg="2.5" code="N" name="North" />
+        <windSpeed mps="1.8" name="Light breeze" />
+        <temperature unit="celsius" value="-6" />
+        <pressure unit="hPa" value="1027.9" />
+      </time>
+      <time from="2021-02-17T07:00:00" to="2021-02-17T13:00:00" period="1">
+        <!-- Valid from 2021-02-17T07:00:00 to 2021-02-17T13:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-17T07:00:00 -->
+        <windDirection deg="44.8" code="NE" name="Northeast" />
+        <windSpeed mps="2.0" name="Light breeze" />
+        <temperature unit="celsius" value="-5" />
+        <pressure unit="hPa" value="1028.8" />
+      </time>
+      <time from="2021-02-17T13:00:00" to="2021-02-17T19:00:00" period="2">
+        <!-- Valid from 2021-02-17T13:00:00 to 2021-02-17T19:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2021-02-17T13:00:00 -->
+        <windDirection deg="49.0" code="NE" name="Northeast" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="-2" />
+        <pressure unit="hPa" value="1028.6" />
+      </time>
+    </tabular>
+  </forecast>
+  <weatherstation stno="0" sttype="" name="" distance="0" lat="0" lon="0" source="">
+    <!--Observasjoner er ikke lengre tilgjengelig i dette datasettet. Observations are no longer availble in this dataset-->
+    <symbol number="0" name="" time="2019-11-14T00:00:00Z" />
+    <temperature unit="" value="0" time="2019-11-14T00:00:00Z" />
+    <windDirection deg="0" code="" name="" time="2019-11-14T00:00:00Z" />
+    <windSpeed mps="0" name="" time="2019-11-14T00:00:00Z" />
+  </weatherstation>
+</weatherdata>

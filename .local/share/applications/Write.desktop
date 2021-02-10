@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+# desktop entry spec version
+Version=1.0
+Name=Write
+Comment=A word processor for handwriting
+Exec=/home/yash/Downloads/Write/Write
+Icon=/home/yash/Downloads/Write/Write144x144.png
+MimeType=image/svg+xml;
+Terminal=false
+Categories=Education
+X-Desktop-File-Install-Version=0.26

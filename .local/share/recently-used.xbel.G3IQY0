@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/yash/.themes/Mojave-dark.tar.xz" added="2021-02-06T14:45:47.889972Z" modified="2021-02-06T14:45:47.889975Z" visited="2021-02-06T14:45:47.889973Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-06T14:45:47.889974Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Mc-OS-CTLina-XFCE-Dark.tar.xz" added="2021-02-07T00:11:33.948684Z" modified="2021-02-07T00:11:43.491087Z" visited="2021-02-07T00:11:33.948684Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T00:11:33.948686Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T00:11:43.491086Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/Fira_Code_v5.2.zip" added="2021-02-07T00:17:18.837858Z" modified="2021-02-07T00:17:18.837871Z" visited="2021-02-07T00:17:18.837860Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T00:17:18.837865Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/sf-ui-display-cufonfonts.zip" added="2021-02-07T00:19:22.550898Z" modified="2021-02-07T00:19:22.550910Z" visited="2021-02-07T00:19:22.550899Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T00:19:22.550904Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///" added="2021-02-07T02:13:27.557175Z" modified="2021-02-07T02:13:27.557186Z" visited="2021-02-07T02:13:27.557177Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>baobab</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="baobab" exec="&apos;baobab %u&apos;" modified="2021-02-07T02:13:27.557180Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData" added="2021-02-07T02:14:56.348868Z" modified="2021-02-07T02:14:56.348878Z" visited="2021-02-07T02:14:56.348870Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:groups>
+          <bookmark:group>baobab</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="baobab" exec="&apos;baobab %u&apos;" modified="2021-02-07T02:14:56.348873Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/8338Giuapps.Inkodo_2.15.4.0_neutral___pzan5b7zgydq2.AppxBundle" added="2021-02-07T02:47:38.664061Z" modified="2021-02-07T02:47:54.534966Z" visited="2021-02-07T02:47:38.664062Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T02:47:38.664063Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T02:47:54.534965Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/8338Giuapps.Inkodo_2.15.4.0_neutral___pzan5b7zgydq2.AppxBundle_FILES/Inkodo_2.15.4.0_x64.appx" added="2021-02-07T02:48:58.586337Z" modified="2021-02-07T02:48:58.586340Z" visited="2021-02-07T02:48:58.586337Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T02:48:58.586338Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/write-latest.tar.gz" added="2021-02-07T02:51:03.285570Z" modified="2021-02-07T02:51:03.285581Z" visited="2021-02-07T02:51:03.285572Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T02:51:03.285576Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/MinGW/lib/.KendraSunderland.mp4" added="2021-02-07T03:43:44.634114Z" modified="2021-02-07T03:43:44.634117Z" visited="2021-02-07T03:43:44.634114Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T03:43:44.634115Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/MinGW/lib/.BreeDaniels.mp4" added="2021-02-07T03:46:01.001247Z" modified="2021-02-07T03:46:01.001255Z" visited="2021-02-07T03:46:01.001248Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T03:46:01.001251Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/cS/ai-notes/18-Classification%20and%20Regression%20Models-KNN.pdf" added="2021-02-07T03:50:42.018637Z" modified="2021-02-08T03:39:00.333058Z" visited="2021-02-07T03:50:42.018639Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:groups>
+          <bookmark:group>xournal++</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="com.github.xournalpp.xournalpp" exec="&apos;com.github.xournalpp.xournalpp %u&apos;" modified="2021-02-07T03:50:42.024754Z" count="2"/>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T03:59:07.102338Z" count="1"/>
+          <bookmark:application name="xournalpp" exec="&apos;xournalpp %u&apos;" modified="2021-02-08T03:39:00.333050Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/cS/ai-notes/18-Classification%20and%20Regression%20Models-KNN-Resized.pdf" added="2021-02-07T03:59:49.803062Z" modified="2021-02-07T04:35:30.820502Z" visited="2021-02-07T03:59:49.803064Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-pdf"/>
+        <bookmark:groups>
+          <bookmark:group>xournal++</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T03:59:49.803069Z" count="1"/>
+          <bookmark:application name="com.github.xournalpp.xournalpp" exec="&apos;com.github.xournalpp.xournalpp %u&apos;" modified="2021-02-07T04:00:02.282890Z" count="2"/>
+          <bookmark:application name="xournalpp" exec="&apos;xournalpp %u&apos;" modified="2021-02-07T04:35:30.820500Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/xournalpp/ui" added="2021-02-07T04:14:47.210121Z" modified="2021-02-07T04:14:47.210129Z" visited="2021-02-07T04:14:47.210123Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-07T04:14:47.210124Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/cS/ai-notes/.xopp/18-Classification%20and%20Regression%20Models-KNN-Resized.pdf" added="2021-02-07T04:37:27.179386Z" modified="2021-02-07T04:37:27.179400Z" visited="2021-02-07T04:37:27.179387Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="xournalpp" exec="&apos;xournalpp %u&apos;" modified="2021-02-07T04:37:27.179392Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/cS/ai-notes/.xopp/18-Classification%20and%20Regression%20Models-KNN-Resized.xopp" added="2021-02-07T04:37:28.196079Z" modified="2021-02-08T10:28:29.292082Z" visited="2021-02-07T04:37:28.196080Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xoj"/>
+        <bookmark:groups>
+          <bookmark:group>xournal++</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="xournalpp" exec="&apos;xournalpp %u&apos;" modified="2021-02-08T10:28:29.292079Z" count="13"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.icons/Sweet-mars.tar.xz" added="2021-02-07T05:00:37.520313Z" modified="2021-02-07T05:00:37.520324Z" visited="2021-02-07T05:00:37.520314Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:00:37.520319Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Sweet-mars.tar.xz" added="2021-02-07T05:01:04.368081Z" modified="2021-02-07T05:01:04.368084Z" visited="2021-02-07T05:01:04.368082Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:01:04.368082Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Orchis.tar.xz" added="2021-02-07T05:06:06.087769Z" modified="2021-02-07T05:06:32.421097Z" visited="2021-02-07T05:06:06.087771Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:06:06.087775Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:06:32.421096Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Orchis-compact.tar.xz" added="2021-02-07T05:06:12.247100Z" modified="2021-02-07T05:06:32.533638Z" visited="2021-02-07T05:06:12.247102Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:06:12.247108Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:06:32.533636Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Orchis-dark.tar.xz" added="2021-02-07T05:06:17.530003Z" modified="2021-02-07T05:06:32.640773Z" visited="2021-02-07T05:06:17.530004Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:06:17.530009Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:06:32.640771Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.themes/Orchis-dark-compact.tar.xz" added="2021-02-07T05:06:22.762376Z" modified="2021-02-07T05:06:33.266715Z" visited="2021-02-07T05:06:22.762377Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:06:22.762382Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:06:33.266713Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.icons/Tela-black.tar.xz" added="2021-02-07T05:07:53.343624Z" modified="2021-02-07T05:07:59.054668Z" visited="2021-02-07T05:07:53.343626Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-xz-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-07T05:07:53.343630Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-07T05:07:59.054666Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Documents/genmon-script.sh" added="2021-02-07T12:48:30.014789Z" modified="2021-02-08T16:13:58.479849Z" visited="2021-02-07T12:48:30.014791Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="wrapper-2.0" exec="&apos;wrapper-2.0 %u&apos;" modified="2021-02-07T12:48:30.014793Z" count="1"/>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2021-02-08T16:13:58.479842Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Documents/wacom-head1.sh" added="2021-02-07T13:58:07.472677Z" modified="2021-02-07T13:58:07.472688Z" visited="2021-02-07T13:58:07.472678Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-07T13:58:07.472682Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/cS" added="2021-02-07T17:15:09.278785Z" modified="2021-02-07T17:15:09.278788Z" visited="2021-02-07T17:15:09.278786Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-07T17:15:09.278787Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/Users/yash/Pictures/Wallpapers" added="2021-02-08T03:07:48.289554Z" modified="2021-02-08T13:51:10.926899Z" visited="2021-02-08T03:07:48.289555Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="xfdesktop-settings" exec="&apos;xfdesktop-settings %u&apos;" modified="2021-02-08T03:07:48.289558Z" count="1"/>
+          <bookmark:application name="nitrogen" exec="&apos;nitrogen %u&apos;" modified="2021-02-08T13:51:10.926897Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/MinGW/lib" added="2021-02-08T03:26:49.586719Z" modified="2021-02-08T03:26:49.586722Z" visited="2021-02-08T03:26:49.586719Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="qbittorrent" exec="&apos;qbittorrent %u&apos;" modified="2021-02-08T03:26:49.586720Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Documents/darkstylesheet.qbtheme" added="2021-02-08T03:34:29.588855Z" modified="2021-02-08T03:34:35.686796Z" visited="2021-02-08T03:34:29.588857Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T03:34:29.588862Z" count="1"/>
+          <bookmark:application name="qbittorrent" exec="&apos;qbittorrent %u&apos;" modified="2021-02-08T03:34:35.686789Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/Users/yash/Pictures/Wallpapers/nqjnrKZ-arch-linux-wallpaper.png" added="2021-02-08T04:21:09.446661Z" modified="2021-02-08T04:21:09.446674Z" visited="2021-02-08T04:21:09.446662Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T04:21:09.446668Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.Xresources" added="2021-02-08T05:28:57.633262Z" modified="2021-02-08T15:25:39.001585Z" visited="2021-02-08T05:28:57.633263Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-08T05:40:27.870581Z" count="2"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:25:39.001584Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config" added="2021-02-08T05:29:27.462608Z" modified="2021-02-08T05:29:27.462611Z" visited="2021-02-08T05:29:27.462609Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-08T05:29:27.462609Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/i3/config" added="2021-02-08T05:29:52.575092Z" modified="2021-02-08T16:45:16.933453Z" visited="2021-02-08T05:29:52.575094Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text" exec="&apos;sublime_text %u&apos;" modified="2021-02-08T13:59:27.929787Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2021-02-08T14:01:17.676961Z" count="1"/>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:45:16.933449Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/fantasque-sans-mono.zip" added="2021-02-08T05:30:44.348307Z" modified="2021-02-08T05:30:51.653951Z" visited="2021-02-08T05:30:44.348308Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T05:30:44.348314Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-08T05:30:51.653949Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/Hack%20Regular%20Nerd%20Font%20Complete.ttf" added="2021-02-08T05:49:59.342652Z" modified="2021-02-08T05:49:59.342659Z" visited="2021-02-08T05:49:59.342653Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T05:49:59.342655Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WLocC/MinGW/lib/.AlysonTylerPennyPax.mp4" added="2021-02-08T06:52:51.659308Z" modified="2021-02-08T06:52:51.659319Z" visited="2021-02-08T06:52:51.659309Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T06:52:51.659313Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///WData/Backups/FL" added="2021-02-08T11:12:07.265032Z" modified="2021-02-08T11:25:09.172991Z" visited="2021-02-08T11:12:07.265032Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="qbittorrent" exec="&apos;qbittorrent %u&apos;" modified="2021-02-08T11:25:09.172985Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/kitty.conf" added="2021-02-08T14:44:44.826073Z" modified="2021-02-08T16:45:17.129929Z" visited="2021-02-08T14:44:44.826074Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:45:17.129922Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/picom/picom.conf" added="2021-02-08T14:48:27.935715Z" modified="2021-02-08T14:48:27.935718Z" visited="2021-02-08T14:48:27.935715Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T14:48:27.935717Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/config.rasi" added="2021-02-08T14:52:37.698478Z" modified="2021-02-08T14:52:37.698482Z" visited="2021-02-08T14:52:37.698478Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T14:52:37.698480Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/entry.rasi" added="2021-02-08T14:52:44.107029Z" modified="2021-02-08T14:52:44.107033Z" visited="2021-02-08T14:52:44.107030Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T14:52:44.107031Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/list.rasi" added="2021-02-08T14:52:48.211972Z" modified="2021-02-08T14:52:48.211976Z" visited="2021-02-08T14:52:48.211973Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T14:52:48.211974Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/output.rasi" added="2021-02-08T14:52:53.525029Z" modified="2021-02-08T14:52:53.525032Z" visited="2021-02-08T14:52:53.525030Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T14:52:53.525031Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/Overpass_Mono.zip" added="2021-02-08T14:55:52.655707Z" modified="2021-02-08T15:12:17.387041Z" visited="2021-02-08T14:55:52.655708Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T14:55:52.655712Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-08T15:12:17.387039Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/output.rasi" added="2021-02-08T15:13:26.799892Z" modified="2021-02-08T15:13:27.015949Z" visited="2021-02-08T15:13:26.799893Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:13:27.015948Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/list.rasi" added="2021-02-08T15:13:26.869420Z" modified="2021-02-08T15:13:27.015954Z" visited="2021-02-08T15:13:26.869421Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:13:27.015954Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/entry.rasi" added="2021-02-08T15:13:26.936469Z" modified="2021-02-08T15:13:27.015958Z" visited="2021-02-08T15:13:26.936470Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:13:27.015958Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/config.rasi" added="2021-02-08T15:13:27.004440Z" modified="2021-02-08T15:48:43.248120Z" visited="2021-02-08T15:13:27.004440Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:48:43.248119Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/Downloads/product-sans.zip" added="2021-02-08T15:16:12.789233Z" modified="2021-02-08T15:16:12.789245Z" visited="2021-02-08T15:16:12.789235Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-02-08T15:16:12.789239Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/launchers/text/launcher.sh" added="2021-02-08T15:38:43.935996Z" modified="2021-02-08T15:38:43.936000Z" visited="2021-02-08T15:38:43.935997Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T15:38:43.935998Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/launchers/launcher_text" added="2021-02-08T16:09:56.347689Z" modified="2021-02-08T16:09:56.347692Z" visited="2021-02-08T16:09:56.347689Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:09:56.347691Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/rofi/bin/launcher_text" added="2021-02-08T16:10:47.353867Z" modified="2021-02-08T16:12:20.456034Z" visited="2021-02-08T16:10:47.353868Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:12:20.456029Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/polybar/launch.sh" added="2021-02-08T16:55:22.157696Z" modified="2021-02-08T16:55:22.157699Z" visited="2021-02-08T16:55:22.157696Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:55:22.157697Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/yash/.config/polybar/hack/config.ini" added="2021-02-08T16:55:41.564088Z" modified="2021-02-08T16:55:41.564091Z" visited="2021-02-08T16:55:41.564089Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>geany</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="geany" exec="&apos;geany %u&apos;" modified="2021-02-08T16:55:41.564090Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

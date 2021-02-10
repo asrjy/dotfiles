@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE khotnewstuff3>
+<hotnewstuffregistry>
+ <stuff category="299">
+  <name>McMojave wallpaper</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1383421</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>50</rating>
+  <downloads>80423</downloads>
+  <installedfile>/home/yash/.local/share/wallpapers/McMojave/*</installedfile>
+  <id>1383421</id>
+  <releasedate>2020-07-16</releasedate>
+  <summary>McMojave wallpapers</summary>
+  <changelog></changelog>
+  <preview>https://cn.opendesktop.org/cache/100x100-0/img/2/7/6/2/a348075d18d5e38b59ea5ccc668ce7aa4236.jpg</preview>
+  <previewBig>https://cn.opendesktop.org/cache/770x540-0/img/2/7/6/2/a348075d18d5e38b59ea5ccc668ce7aa4236.jpg</previewBig>
+  <payload>https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTQ5MTA4MTQiLCJvIjoiMSIsInMiOiJmNDNjNWU3OTUyNDYxODdlNDM0OTJjYjA1MWIwNDk4MjczMjdjNTM4ZmRlODIxMjczYWJjZDM5NjlhZDg3YWE4OTlhMTE4YmQ4MWJlMDIxOGJhM2I0M2Y2YWE3ZjdkY2I5Njc0NzQ5NjAwNDNkZDU0YTQ4Y2Y1NjA1ZDE1MTViNSIsInQiOjE2MTI2MTIzNzMsInN0ZnAiOm51bGwsInN0aXAiOiIxMjIuMTgzLjM3LjE5MSJ9.T4ufJkFRTqwCgJpGIHOJ80rbi5QhrheDDqnVWZMFZiY/01-McMojave.tar.xz</payload>
+  <tags>wallpaper,artwork,plasma,kde,cc-by-sa,modification-product</tags>
+  <status>installed</status>
+ </stuff>
+ <stuff category="299">
+  <name>WhiteSur Wallpaper</name>
+  <providerid>https://api.kde-look.org/ocs/v1/</providerid>
+  <author>vinceliuice</author>
+  <homepage>https://store.kde.org/p/1398833</homepage>
+  <licence></licence>
+  <version></version>
+  <rating>67</rating>
+  <downloads>204294</downloads>
+  <installedfile>/home/yash/.local/share/wallpapers/WhiteSur/*</installedfile>
+  <id>1398833</id>
+  <releasedate>2020-07-01</releasedate>
+  <summary>MacOS big sur theme for kde plasma</summary>
+  <changelog></changelog>
+  <preview>https://cn.opendesktop.org/cache/100x100-0/img/3/0/c/a/3fdc0e89e55c612da93893fd216253928423.png</preview>
+  <previewBig>https://cn.opendesktop.org/cache/770x540-0/img/3/0/c/a/3fdc0e89e55c612da93893fd216253928423.png</previewBig>
+  <payload>https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE1OTM1ODg5MzciLCJvIjoiMSIsInMiOiJmYzk0YWI1NWI0NWU3ZWJlNmFmYjQ0OWY2MTBiNDAwNmRiNTk4ZDc0OWU4OWU1YTcxYjk0MDY0M2RkNjU2YWI1MjZkODM4ODQzNjZhN2JiZTk0NWE5NTQ5NTU3NDE0OTU1NzFjNjA3YjQ2Y2MyMDA0YzA3ZGRmOTJjNmY0ZTdkNiIsInQiOjE2MTI2MTE3NjUsInN0ZnAiOm51bGwsInN0aXAiOiIxMjIuMTgzLjM3LjE5MSJ9.j7ECXpgAUgZuKbs1OUkovFntWsnziG9q1-xHuxavpLQ/WhiteSur.tar.xz</payload>
+  <tags>wallpaper,artwork,plasma,kde,cc-by-sa,original-product</tags>
+  <status>installed</status>
+ </stuff>
+</hotnewstuffregistry>
