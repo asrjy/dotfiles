@@ -1,3 +1,12 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME.sh
+separator_block_width=15
+markup=pango
+
+[pacpackages]
+label=<span color="#fabd2f"> </span>
+interval=once
+signal=8
+
 [script]
 label=💡 
 command=light | cut -d'.' -f 1
@@ -5,26 +14,33 @@ color=#FFFFFF
 interval=5
 
 [DISK]
-command=df -h / | awk '/\//{ printf(" 💾 %4s/%s \n", $4, $2) }'
-interval=2
+command=df -h / | awk '/\//{ printf(" %4s/%s \n", $4, $2) }'
+interval=20
 color=#C9E3DB
+label=<span color="#458588">💾</span>
+
+#[disk]
+#interval=60
+#label=<span color="#458588"> </span>
+#command=disk /home | awk '{print $2}'
 
 [cpu]
-command=~/.local/bin/statusbar/cpu.sh
+#command=~/.local/bin/statusbar/cpu.sh
 interval=15
 interval=repeat
-color=#00B4EB
-label=🧠
+#color=#00B4EB
+#label=🧠
+label=<span color="#d65d0e"> </span>
 
-[MEM]
-command=~/.local/bin/statusbar/memory.sh
+[memory]
+#command=~/.local/bin/statusbar/memory.sh
 interval=1
 color=#FEC925
-label=💪
+label=<span color="#9d0006"> </span>
 
-[SOUND_BURST]
-command=~/.config/i3blocks/sound/sound_burst.sh
-interval=once
+#[volume]
+#command=~/.config/i3blocks/sound/sound_burst.sh
+#interval=once
 
 #[SOUND]
 #full_text= 🔇:  0% 
@@ -33,7 +49,7 @@ interval=once
 #signal=1
 
 [volume]
-command=~/.local/bin/statusbar/volume.sh
+#command=~/.local/bin/statusbar/volume.sh
 interval=once
 signal=10
 
@@ -42,6 +58,6 @@ command=~/.config/i3blocks/battery/battery_info.sh
 interval=3
 
 [clock]
-command=~/.local/bin/statusbar/clock.sh
+#command=~/.local/bin/statusbar/clock.sh
 label=📅
 interval=1
