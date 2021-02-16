@@ -2,16 +2,21 @@ command=~/.local/bin/statusbar/$BLOCK_NAME.sh
 separator_block_width=15
 markup=pango
 
-[pacpackages]
-label=<span color="#fabd2f"> </span>
-interval=once
-signal=8
+#[pomodoro]
+#command=~/.local/bin/statusbar/pomodoro
+#interval=1
+#label=<span color="#9d0006">🍅 </span>
 
-[script]
-label=💡 
-command=light | cut -d'.' -f 1
-color=#FFFFFF
-interval=5
+#[arch-update]
+#command=.local/bin/statusbar/updates.sh | awk '{print $2}'
+#interval=once
+#label=<span color="#1793D1">  </span>
+
+#[script]
+#label=💡 
+#command=light | cut -d'.' -f 1
+#color=#FFFFFF
+#interval=5
 
 [DISK]
 command=df -h / | awk '/\//{ printf(" %4s/%s \n", $4, $2) }'
@@ -25,16 +30,17 @@ label=<span color="#458588">💾</span>
 #command=disk /home | awk '{print $2}'
 
 [cpu]
-#command=~/.local/bin/statusbar/cpu.sh
-interval=15
-interval=repeat
-#color=#00B4EB
-#label=🧠
+interval=5
 label=<span color="#d65d0e"> </span>
+
+[gpu-temperature]
+command=nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader | awk '{print "GPU:+"$1".0°C"}'
+interval=2
+label=<span color="#ffb86c"> </span>
 
 [memory]
 #command=~/.local/bin/statusbar/memory.sh
-interval=1
+interval=5
 color=#FEC925
 label=<span color="#9d0006"> </span>
 

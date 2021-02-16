@@ -8,7 +8,7 @@ set $mod Mod4
 exec --no-startup-id nm-applet
 
 # Nitrogen for the wallpaper
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id "nitrogen --restore"
 
 # Compton 
 # exec --no-startup-id "compton -b"
@@ -21,12 +21,13 @@ exec --nostartup-id "xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &"
 
 # Start i3bar
 bar {
-        position top
+        position bottom
         status_command i3blocks
-        font pango:Fantasque Sans Mono Nerd Font 10
-        height 20
+        font pango:Fira Code Retina 13
+        height 23
         colors {
-                background #282A36
+		background #000000
+                # background #282A36
                 statusline #F8F8F2
                 separator  #44475A
 
@@ -38,6 +39,18 @@ bar {
         }
 }
 
+# Polybar
+# exec --nostartup-id "bash ~/.config/polybar/launch.sh --grayblocks"
+
+# External Monitor
+# exec --nostartup-id "xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-2 --off --output DP-3 --off --output eDP-1-1 --off"
+
+# Wallpaper
+# exec --nostartup-id /usr/bin/feh --bg-scale '/WLocC/Users/yash/Pictures/Wallpapers/wallpaperbetter.com_1366x768.jpg'
+
+# Autoname script
+# exec_always ~/.config/i3/i3scripts/autoname_workspaces.py &
+
 ###################
 #### Shortcuts ####
 ###################
@@ -45,7 +58,7 @@ bar {
 bindsym $mod+Return exec kitty
 
 # Kill active window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift+q kill 
 
 # Change focus
 bindsym $mod+h focus left
@@ -277,6 +290,10 @@ bindsym $mod+b exec brave
 # Brave Incognito window
 bindsym $mod+Shift+b exec brave --incognito
 
+# Toggle i3 gaps
+bindsym $mod+Shift+z gaps inner all set 0; gaps outer all set 0
+bindsym $mod+Shift+x gaps inner all set 6; gaps outer all set 4
+
 #############################
 #### Appearance Settings ####
 #############################
@@ -290,18 +307,22 @@ for_window [class="feh"] floating enable
 for_window [class="mupen64plus"] floating enable
 for_window [class="dolphin-emu"] floating enable
 
+# Setting the default orientation
+# default_orientation vertical
+
 # Title bar modifications
+# font pango:SpaceMono Nerd Font 11
 font pango:Fira Sans 15
 title_align center
-for_window [class="^.*"] border pixel 0 title_format "<span font='Fantasque Sans Mono 12'>%title</span>"
+for_window [class="^.*"] border pixel 2 title_format "<span font='Fantasque Sans Mono 10'>%title</span>"
 
 # Set fg and bg variables
 set $fg "#353836"
 set $bg "#181a19"
 
 # Dracula Color Theme
-client.focused          #222831 #222831 #FFBA0D #222831   #222831
-client.focused_inactive #2A323D #2A323D #FFBB4F #2A323D   #2A323D
+client.focused          #222831 #222831 #FFBA0D #222831   #8a350e
+client.focused_inactive #2A323D #2A323D #FFBB4F #2A323D   #4d5b6e
 client.unfocused        #37414F #37414F #BFBFBF #37414F   #37414F
 client.urgent           #900000 #900000 #FFFFFF #900000   #900000
 client.placeholder      #0C0C0C #0C0C0C #FFFFFF #000000   #0C0C0C
@@ -316,11 +337,20 @@ client.background       #edca18
 # client.background       #F8F8F2
 
 # i3gaps default settings
-gaps inner 6
-gaps outer 4
+gaps inner 0
+gaps outer 0
 
 # Smart borders
 smart_borders on
 
 # Rounded corners, Make border normal to border pixel to get rounded corners. 
-border_radius 5
+# border_radius 5
+
+
+
+############################
+#### Startup at the end ####
+############################
+
+# Wallpaper
+exec --no-startup-id /usr/bin/feh --bg-scale '/WLocC/Users/yash/Pictures/Wallpapers/wallpaperbetter.com_1920x1080.jpg'
