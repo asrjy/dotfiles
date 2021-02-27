@@ -23,19 +23,21 @@ exec --nostartup-id "xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &"
 bar {
         position bottom
         status_command i3blocks
-        font pango:Fira Code Retina 13
-        height 23
+        # font pango: Georgia Bold 14
+	font pango:Fira Code Retina 13
+	# font pango: Source Code Pro 14
+	# font xft: Source Code Pro Nerd Font, Font Awesome 15
+        height 25
         colors {
-		background #000000
-                # background #282A36
-                statusline #F8F8F2
-                separator  #44475A
-
-                focused_workspace  #44475A #44475A #F8F8F2
-                active_workspace   #282A36 #44475A #F8F8F2
-                inactive_workspace #282A36 #282A36 #BFBFBF
-                urgent_workspace   #FF5555 #FF5555 #F8F8F2
-                binding_mode       #FF5555 #FF5555 #F8F8F2
+                separator 		#2e3440
+		background 		#000000
+                background 		#2e3440
+                statusline 		#d8dee9 
+                focused_workspace 	#88c0d0 #88c0d0 #2e3440 #2e3440
+                active_workspace 	#2e3440 #2e3440 #8fbcbb #8fbcbb
+                inactive_workspace 	#3b4252 #3b4252 #eceff4 #eceff4
+                urgent_workspace 	#bf616a #bf616a #eceff4 #eceff4
+                binding_mode       #FF5555 #FF5555 #Fec925
         }
 }
 
@@ -112,11 +114,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Naming the workspaces that can will be used to switch between them
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
+set $ws1 "1 "
+set $ws2 "2 "
+set $ws3 "3 "
+set $ws4 "4 ﱘ"
+set $ws5 "5 "
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -196,6 +198,8 @@ bindsym $mod+Shift+s exec flameshot gui
 
 # Dmenu for normal applications
 bindsym $mod+d exec --no-startup-id dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'Run' -l 5
+# bindsym $mod+d exec --no-startup-id dmenu_run -nf '#2C2C2C' -nb '#ABABAB' -sb '#CACACA' -sf '#000000' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'Run' -l 5
+
 
 # Dmenu for GUI Applications
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'GUI Apps' -l 5 "
@@ -204,13 +208,13 @@ bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#
 bindsym $mod+f fullscreen toggle
 
 # Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+bindsym XF86MonBrightnessUp exec light -A 10
+bindsym XF86MonBrightnessDown exec light -U 10
 
 # Audio Controls
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5% ; $refresh_i3status ; notify-send 'Volume Increased'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5% ; $refresh_i3status ; notify-send 'Volume Decreased'"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +2% ; $refresh_i3status ; notify-send 'Volume Increased'"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -2% ; $refresh_i3status ; notify-send 'Volume Decreased'"
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle ; $refresh_i3status ; notify-send 'Toggled Audio Mute'"
 bindsym XF86AudioMicMute exec --no-startup-id pactl "set-source-mute @DEFAULT_SOURCE@ toggle ; $refresh_i3status ; notify-send 'Toggled Mic Mute'"
 
@@ -298,7 +302,8 @@ bindsym $mod+Shift+x gaps inner all set 6; gaps outer all set 4
 #### Appearance Settings ####
 #############################
 # Global Font
-font pango:Fantasque Sans Mono Nerd Font 10
+# font pango:Fantasque Sans Mono Nerd Font 10
+font pango:JetBrains Mono, IPAPMincho 13
 
 # Floating Applications Style
 for_window [class="Orca"] floating enable
@@ -312,29 +317,23 @@ for_window [class="dolphin-emu"] floating enable
 
 # Title bar modifications
 # font pango:SpaceMono Nerd Font 11
-font pango:Fira Sans 15
+font pango:Fira Sans 18
 title_align center
-for_window [class="^.*"] border pixel 2 title_format "<span font='Fantasque Sans Mono 10'>%title</span>"
+for_window [class="^.*"] border pixel 2 title_format "<span font='Fantasque Sans Mono 14'>%title</span>"
 
 # Set fg and bg variables
 set $fg "#353836"
 set $bg "#181a19"
 
-# Dracula Color Theme
-client.focused          #222831 #222831 #FFBA0D #222831   #8a350e
-client.focused_inactive #2A323D #2A323D #FFBB4F #2A323D   #4d5b6e
-client.unfocused        #37414F #37414F #BFBFBF #37414F   #37414F
-client.urgent           #900000 #900000 #FFFFFF #900000   #900000
-client.placeholder      #0C0C0C #0C0C0C #FFFFFF #000000   #0C0C0C
+# Windows 98 Theme
+# class                         border  bground text    indicator child_border
+client.focused 			#88c0d0 #88c0d0 #88c0d0 #88c0d0 
+client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252 
+client.focused_inactive         #3b4252 #3b4252 #3b4252 #3b4252 
+client.urgent 			#bf616a #bf616a #bf616a #bf616a 
+client.placeholder              #ffffff #25252c #ffffff #036082 #036082
 
 client.background       #edca18
-
-# client.focused          #384261 #384261 #F8F8F2 #384261   #384261
-# client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-# client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-# client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-# client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
-# client.background       #F8F8F2
 
 # i3gaps default settings
 gaps inner 0
@@ -345,7 +344,6 @@ smart_borders on
 
 # Rounded corners, Make border normal to border pixel to get rounded corners. 
 # border_radius 5
-
 
 
 ############################

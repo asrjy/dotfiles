@@ -1,69 +1,215 @@
 command=~/.local/bin/statusbar/$BLOCK_NAME.sh
-separator_block_width=15
 markup=pango
+full_text=
+align=center
+separator=false
+separator_block_width=0
+background=#2e3440
 
-#[pomodoro]
-#command=~/.local/bin/statusbar/pomodoro
-#interval=1
-#label=<span color="#9d0006">🍅 </span>
-
-#[arch-update]
-#command=.local/bin/statusbar/updates.sh | awk '{print $2}'
-#interval=once
-#label=<span color="#1793D1">  </span>
-
-#[script]
-#label=💡 
-#command=light | cut -d'.' -f 1
-#color=#FFFFFF
-#interval=5
+[separator]
+color=#4c566a
+background=#2e3440
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [DISK]
 command=df -h / | awk '/\//{ printf(" %4s/%s \n", $4, $2) }'
 interval=20
-color=#C9E3DB
-label=<span color="#458588">💾</span>
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+label=<span color="#f5dd42"> DISK:</span>
 
-#[disk]
-#interval=60
-#label=<span color="#458588"> </span>
-#command=disk /home | awk '{print $2}'
+[separator]
+full_text="  "
+color=#2e3440
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [cpu]
 interval=5
-label=<span color="#d65d0e"> </span>
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+label=<span color="#f5dd42">CPU TEMP: </span>
+
+[separator]
+color=#81a1c1
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [gpu-temperature]
 command=nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader | awk '{print "GPU:+"$1".0°C"}'
 interval=2
-label=<span color="#ffb86c"> </span>
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+label=<span color="#0c4078"> GPU TEMP: </span>
+
+[separator]
+full_text="  "
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [memory]
-#command=~/.local/bin/statusbar/memory.sh
 interval=5
-color=#FEC925
-label=<span color="#9d0006"> </span>
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+label=<span color="#0c4078">MEM:</span> 
 
-#[volume]
-#command=~/.config/i3blocks/sound/sound_burst.sh
-#interval=once
+############
+[separator]
+color=#4c566a
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+############
 
-#[SOUND]
-#full_text= 🔇:  0% 
-#command=~/.config/i3blocks/sound/sound_info.sh
-#interval=0
-#signal=1
+[separator]
+color=#4c566a
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [volume]
-#command=~/.local/bin/statusbar/volume.sh
 interval=once
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 signal=10
+
+[separator]
+full_text=" "
+color=#2e3440
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
 
 [BATTERY]
 command=~/.config/i3blocks/battery/battery_info.sh
 interval=3
+color=#eceff4
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+label=<span color="#f5dd42"> BAT: </span>
+
+[separator]
+color=#81a1c1
+background=#4c566a
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+
 
 [clock]
-#command=~/.local/bin/statusbar/clock.sh
-label=📅
 interval=1
+color=#2e3440
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=0
+border_top=2
+border_bottom=2
+
+[separator]
+color=#81a1c1
+background=#81a1c1
+border=#2e3440
+border_left=0
+border_right=2
+border_top=2
+border_bottom=2
+
+##################################################
+# command=~/.local/bin/statusbar/$BLOCK_NAME.sh
+# separator_block_width=15
+# markup=pango
+# 
+# [DISK]
+# command=df -h / | awk '/\//{ printf(" %4s/%s \n", $4, $2) }'
+# interval=20
+# color=#000000
+# label=<span color="#008080">DISK:</span>
+# 
+# [cpu]
+# interval=5
+# color=#000000
+# label=<span color="#008080">CPU TEMP: </span>
+# 
+# [gpu-temperature]
+# command=nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader | awk '{print "GPU:+"$1".0°C"}'
+# interval=2
+# color=#000000
+# label=<span color="#008080">GPU TEMP: </span>
+# 
+# [memory]
+# interval=5
+# color=#000000
+# label=<span color="#008080">MEM:</span> 
+# 
+# [volume]
+# interval=once
+# color=#000000
+# signal=10
+# 
+# [BATTERY]
+# command=~/.config/i3blocks/battery/battery_info.sh
+# interval=3
+# color=#000000
+# label=<span color="#008080">BAT: </span>
+# 
+# [clock]
+# interval=1
+# color=#000000
