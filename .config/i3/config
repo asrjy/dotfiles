@@ -1,37 +1,30 @@
+##############################
+###### General Settings ######
+##############################
 # Mod Key
 set $mod Mod4
 
-##############################
-#### Startup Applications ####
-##############################
-# Network Manager Applet
-exec --no-startup-id nm-applet
+# Font for window titles. Will also be used by the bar.
+font pango:Fira Code Retina 18
 
-# Nitrogen for the wallpaper
-# exec --no-startup-id "nitrogen --restore"
+# Removing Titles in Normal Mode and centers it in Tabbed and Window Mode
+smart_borders on
+title_align center
+for_window [class="^.*"] border pixel 2 title_format "<span font='Fantasque Sans Mono 14'>%title</span>"
 
-# Compton 
-# exec --no-startup-id "compton -b"
+# Provide Gaps to Windows. Increase/Decrease as you like.
+gaps inner 7
 
-# xcompmgr
-exec --nostartup-id "xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 &"
-
-# Stack monitors script
-# exec bash ~/Documents/stack-monitors.sh
-
-# Start i3bar
+# Bar Settings
 bar {
         position bottom
         status_command i3blocks
-        # font pango: Georgia Bold 14
-	font pango:Fira Code Retina 13
-	# font pango: Source Code Pro 14
-	# font xft: Source Code Pro Nerd Font, Font Awesome 15
+	font pango:Fira Code Retina 10
         height 25
         colors {
-                separator 		#2e3440
-		background 		#000000
-                background 		#2e3440
+                separator 		#c7c9c7
+		background 		#2e3440
+                background 		#252625
                 statusline 		#d8dee9 
                 focused_workspace 	#88c0d0 #88c0d0 #2e3440 #2e3440
                 active_workspace 	#2e3440 #2e3440 #8fbcbb #8fbcbb
@@ -41,89 +34,140 @@ bar {
         }
 }
 
-# Polybar
-# exec --nostartup-id "bash ~/.config/polybar/launch.sh --grayblocks"
+# Defining names for the workspaces
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
-# External Monitor
-# exec --nostartup-id "xrandr --output DP-0 --off --output DP-1 --off --output HDMI-0 --mode 1366x768 --pos 0x0 --rotate normal --output DP-2 --off --output DP-3 --off --output eDP-1-1 --off"
 
-# Wallpaper
-# exec --nostartup-id /usr/bin/feh --bg-scale '/WLocC/Users/yash/Pictures/Wallpapers/wallpaperbetter.com_1366x768.jpg'
 
-# Autoname script
-# exec_always ~/.config/i3/i3scripts/autoname_workspaces.py &
 
-###################
-#### Shortcuts ####
-###################
-# Terminal
+#######################
+###### Shortcuts ######
+#######################
+# Workspace back and forth
+bindsym $mod+Tab workspace back_and_forth
+
+# File Manager
+bindsym $mod+t exec thunar
+
+# Flameshot for the Screenshots
+bindsym $mod+Shift+s exec flameshot gui
+
+# Start Terminal. Kitty in this case
 bindsym $mod+Return exec kitty
 
-# Kill active window
-bindsym $mod+Shift+q kill 
+# Kill Focused Window
+bindsym $mod+Shift+q kill
 
+# Start Rofi
+bindsym $mod+d exec --no-startup-id rofi -show drun -theme Pop-Dark -icon-theme "Tela-circle" -show-icons -font  "Fira Code 10"
+
+# Rofi, but for applications in /usr/bin or /usr/sbin
+bindsym $mod+Shift+d exec --no-startup-id rofi -show run -theme Pop-Dark -font  "Fira Code 10"
+
+# Lock Screen This will yield a black lock screen, which can be customized to your liking.
+bindsym $mod+x exec betterlockscreen -l
+
+# Enter Resize Mode
+bindsym $mod+r mode "resize"
+
+# Increase Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +2% ; $refresh_i3status ; notify-send 'Volume Increased'"
+
+# Decrease Volume
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -2% ; $refresh_i3status ; notify-send 'Volume Decreased'"
+
+# Mute Audio
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle ; $refresh_i3status ; notify-send 'Toggled Audio Mute'"
+
+# Mute Mic
+bindsym XF86AudioMicMute exec --no-startup-id pactl "set-source-mute @DEFAULT_SOURCE@ toggle ; $refresh_i3status ; notify-send 'Toggled Mic Mute'"
+
+# Increase Brightness
+bindsym XF86MonBrightnessUp exec sudo xbacklight -inc 10
+
+# Decrease Brightness
+bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 10
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+ 
 # Change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
-
-# Alternatively, can use arrow keys
+# Left
+bindsym $mod+j focus left
 bindsym $mod+Left focus left
+
+# Down
+bindsym $mod+k focus down
 bindsym $mod+Down focus down
+
+# Up
+bindsym $mod+l focus up
 bindsym $mod+Up focus up
+
+# Right
+bindsym $mod+semicolon focus right
 bindsym $mod+Right focus right
 
-# Move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
 
-# alternatively, can use the arrow keys
+
+# Move focused window
+# Left
+bindsym $mod+Shift+j move left
 bindsym $mod+Shift+Left move left
+
+# Down
+bindsym $mod+Shift+k move down
 bindsym $mod+Shift+Down move down
+
+# Up
+bindsym $mod+Shift+l move up
 bindsym $mod+Shift+Up move up
+
+# Right
+bindsym $mod+Shift+semicolon move right
 bindsym $mod+Shift+Right move right
 
-# Toggle floating mode for active window
-bindsym $mod+Shift+space floating toggle
 
-# Hold $mod and use mod to drag floating window around
-# Edges of floating window can be used to resize
-floating_modifier $mod
+# Split in horizontal orientation
+bindsym $mod+h split h
 
-# Change container mode
+# Split in vertical orientation
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
-# New window in horizontal orientation
-bindsym $mod+g split h
-
-# New window in vertical orientation
-bindsym $mod+v split v
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
 
 # Change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
 # Focus the parent container
 bindsym $mod+a focus parent
-
-# Focus the child container
-#bindsym $mod+d focus child
-
-# Naming the workspaces that can will be used to switch between them
-set $ws1 "1 "
-set $ws2 "2 "
-set $ws3 "3 "
-set $ws4 "4 ﱘ"
-set $ws5 "5 "
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
 
 # Switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -149,27 +193,8 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-# Reload the configuration file
-# bindsym $mod+Shift+c reload
-
-# Reload xcompmgr
-bindsym $mod+c exec ~/.bin/comp 
-
-# Toggle xcompmgr
-bindsym #mod+Shift+c exec ~/.bin/toggle-xcomp
-
-# Reload i3 (restarting i3)
-bindsym $mod+Shift+r restart
-
-# Creating resize mode
-# Right click and drag to change with mouse alternatively
+# Resize Mode Settings 
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
@@ -187,168 +212,23 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-# Activate resize mode
-bindsym $mod+r mode "resize"
-
-# Toggle i3bar
-bindsym $mod+m bar mode toggle
-
-# Screenshot
-bindsym $mod+Shift+s exec flameshot gui
-
-# Dmenu for normal applications
-bindsym $mod+d exec --no-startup-id dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'Run' -l 5
-# bindsym $mod+d exec --no-startup-id dmenu_run -nf '#2C2C2C' -nb '#ABABAB' -sb '#CACACA' -sf '#000000' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'Run' -l 5
-
-
-# Dmenu for GUI Applications
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'Fantasque Sans Mono:bold:pixelsize=15' -p 'GUI Apps' -l 5 "
-
-# Fullscreen
-bindsym $mod+f fullscreen toggle
-
-# Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec light -A 10
-bindsym XF86MonBrightnessDown exec light -U 10
-
-# Audio Controls
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +2% ; $refresh_i3status ; notify-send 'Volume Increased'"
-bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -2% ; $refresh_i3status ; notify-send 'Volume Decreased'"
-bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle ; $refresh_i3status ; notify-send 'Toggled Audio Mute'"
-bindsym XF86AudioMicMute exec --no-startup-id pactl "set-source-mute @DEFAULT_SOURCE@ toggle ; $refresh_i3status ; notify-send 'Toggled Mic Mute'"
-
-# Wacom Switch Monitor
-bindsym $mod+z exec sh ~/Documents/wacom-head0.sh
-bindsym $mod+x exec sh ~/Documents/wacom-head1.sh
-
-# Power Menu mode 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
-
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-
-# Activate Power Menu
-bindsym $mod+Shift+e mode "$mode_system"
-
-# Activate File Manager
-bindsym $mod+t exec thunar
-
-# Alt tab like behaviour
-bindsym $mod+Tab workspace back_and_forth
-
-# i3gaps mod mode
-set $mode_gaps Gaps: (o) outer, (i) inner
-set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
-set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
-bindsym $mod+Shift+g mode "$mode_gaps"
-
-# Initiate settings mode
-mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-# Adjust Inner Gaps mode
-mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
-
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-# Adjust Outer Gaps mode
-mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
-
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
-
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-}
-
-# Brave Normal window
-bindsym $mod+b exec brave
-
-# Brave Incognito window
-bindsym $mod+Shift+b exec brave --incognito
-
-# Toggle i3 gaps
-bindsym $mod+Shift+z gaps inner all set 0; gaps outer all set 0
-bindsym $mod+Shift+x gaps inner all set 6; gaps outer all set 4
-
-#############################
-#### Appearance Settings ####
-#############################
-# Global Font
-# font pango:Fantasque Sans Mono Nerd Font 10
-font pango:JetBrains Mono, IPAPMincho 13
-
-# Floating Applications Style
-for_window [class="Orca"] floating enable
-for_window [class="ffplay"] floating enable
-for_window [class="feh"] floating enable
-for_window [class="mupen64plus"] floating enable
-for_window [class="dolphin-emu"] floating enable
-
-# Setting the default orientation
-# default_orientation vertical
-
-# Title bar modifications
-# font pango:SpaceMono Nerd Font 11
-font pango:Fira Sans 18
-title_align center
-for_window [class="^.*"] border pixel 2 title_format "<span font='Fantasque Sans Mono 14'>%title</span>"
-
-# Set fg and bg variables
-set $fg "#353836"
-set $bg "#181a19"
-
-# Windows 98 Theme
-# class                         border  bground text    indicator child_border
-client.focused 			#88c0d0 #88c0d0 #88c0d0 #88c0d0 
-client.unfocused 		#3b4252 #3b4252 #3b4252 #3b4252 
-client.focused_inactive         #3b4252 #3b4252 #3b4252 #3b4252 
-client.urgent 			#bf616a #bf616a #bf616a #bf616a 
-client.placeholder              #ffffff #25252c #ffffff #036082 #036082
-
-client.background       #edca18
-
-# i3gaps default settings
-gaps inner 0
-gaps outer 0
-
-# Smart borders
-smart_borders on
-
-# Rounded corners, Make border normal to border pixel to get rounded corners. 
-# border_radius 5
 
 
 ############################
-#### Startup at the end ####
+###### Run at Startup ######
 ############################
+# Home Triple Monitor Setup
+exec --no-startup-id xrandr --output eDP-1 --primary --mode 1920x1080 --pos 768x1080 --rotate normal --output DP-1-0 --off --output DP-1-1 --off --output HDMI-1-0 --mode 1920x1080 --pos 768x0 --rotate normal --output DP-1-2 --off --output DP-1-3 --mode 1366x768 --pos 0x0 --rotate right
 
-# Wallpaper
-exec --no-startup-id /usr/bin/feh --bg-scale '/WLocC/Users/yash/Pictures/Wallpapers/wallpaperbetter.com_1920x1080.jpg'
+# Display Wallpaper, always.
+exec_always feh --bg-fill /usr/share/backgrounds/i3/wall.png
+
+# The 4 lines of text above come from i3 documentation. Waking up from a suspended system will launch betterlockscreen
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l --nofork
+
+# Network Manager Applet
+exec --no-startup-id nm-applet
+
+# Compositor. This helps in transparency and fading.
+exec_always picom -f
+
